@@ -1,0 +1,34 @@
+{
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "containerDefinitions": [
+        {
+            "essential": true,
+            "image": "************.dkr.ecr.**-****-*.amazonaws.com/netz:netz",
+            "memory": 60000,
+	          "cpu": 36864,
+            "name": "netz",
+            "environment" : [
+                { "name" : "SUBNET_TO_SCAN", "value" : "0.0.0.0/0" },
+                { "name" : "PORT_TO_SCAN", "value" : "9200" },
+                { "name" : "ZGRAB2_ENDPOINT", "value" : "/" }
+            ],
+            "mountPoints": [
+                {
+                  "sourceVolume": "netz",
+                  "containerPath": "/opt/out"
+                }
+              ]
+        }
+    ],
+    "volumes": [
+        {
+          "name": "netz",
+          "host": {
+            "sourcePath": "/tmp"
+          }
+        }
+      ],
+    "family": "netz"
+}
