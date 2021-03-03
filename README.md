@@ -23,6 +23,8 @@ There are few options to run this project:
 2. Run by yourself using docker 
 3. For [PF_RING ZC (Zero Copy)](https://www.ntop.org/products/packet-capture/pf_ring/pf_ring-zc-zero-copy/) run by yourself the infrastructure and using [pf_ring setup](pf_ring/configure_pf_ring.sh)
 
+If you want to read more about it, you can found it here: [Scan the whole internet while drinking coffee](https://cmpxchg16.medium.com/scan-the-whole-internet-while-drinking-coffee-9c4085539594)
+
 ## TL;DR
 
 In [discover.sh](docker/discover.sh) you will find a test for [Elasticsearch](https://www.elastic.co/).  
@@ -290,7 +292,7 @@ We tested it on AWS with c4.8xlarge with 4 x NIC ~ 10.5M ~ 12M PPS => took 10 mi
 
 
 # Disclaimer
-Use at your own risk!    
+Our main drive in life is to make the world a better and safer place. If you would like to use this information to harm someone, you are doing the opposite, and at your own risk.    
 
 
 # Copyright
