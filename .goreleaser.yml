@@ -24,7 +24,7 @@ brews:
       name: homebrew-tap
       # Optionally a token can be provided, if it differs from the token provided to GoReleaser
       token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
-    description: Friends don't let friends leak secrets in terminal windows
+    description: Discover internet-wide misconfigurations while drinking coffee
     homepage:  https://github.com/spectralops/netz
     license: "MIT"
 
