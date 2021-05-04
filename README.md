@@ -74,7 +74,6 @@ or by settings environment variables:
 [Install Golang 1.14 +](https://golang.org/dl/)  
 
 ```
-$ go build github.com/SpectralOps/netz
 $ netz
 NAME:
    netz - netz cloud runner
@@ -127,7 +126,7 @@ On AWS with c4.8xlarge with 6 x NIC ~ 2.9M ~ 3.5M PPS => took 25 minutes
 ##### Steps
 ```bash
 $ git clone https://github.com/SpectralOps/netz
-$ cd netz
+$ cd netz/docker/
 $ docker build -t netz .
 $ docker run -e PORT_TO_SCAN='80' -e SUBNET_TO_SCAN='216.239.38.21/32' -e ZGRAB2_ENDPOINT='/' -e TASK_DEFINITION='docker' -v /tmp/:/opt/out --network=host -it netz
 ```
