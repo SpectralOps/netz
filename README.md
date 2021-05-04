@@ -129,7 +129,7 @@ On AWS with c4.8xlarge with 6 x NIC ~ 2.9M ~ 3.5M PPS => took 25 minutes
 $ git clone https://github.com/SpectralOps/netz
 $ cd netz
 $ docker build -t netz .
-$ docker run -e PORT_TO_SCAN='9200' -e SUBNET_TO_SCAN='0.0.0.0/0' -e ZGRAB2_ENDPOINT='/' -e TASK_DEFINITION='docker' -v /tmp/:/opt/out --network=host -it netz
+$ docker run -e PORT_TO_SCAN='80' -e SUBNET_TO_SCAN='216.239.38.21/32' -e ZGRAB2_ENDPOINT='/' -e TASK_DEFINITION='docker' -v /tmp/:/opt/out --network=host -it netz
 ```
 :warning:    
 **The time to scrape the entire internet with simple hardware and simple internet backbone could take days**

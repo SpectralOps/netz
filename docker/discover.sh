@@ -26,4 +26,4 @@ echo
 cat $OUT | awk '{print $6}'
 echo zgrab2 ips:
 echo
-cat $OUT | awk '{print $6}' | zgrab2 multiple -c zgrab2.ini | jq -r '. | select(.data.http.result.response.body != null) | select(.data.http.result.response.body|test("lucene_version")) | .ip'
+cat $OUT | awk '{print $6}' | zgrab2 multiple -c zgrab2.ini | jq -r '. | select(.data.http.result.response.body != null) | select(.data.http.status == "success") | .ip' | tee /opt/out/zgrab2-$TASK_DEFINITION.out
