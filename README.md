@@ -9,7 +9,7 @@
 <p align="center">
 <b>:bomb: Discover internet-wide misconfigurations</b>
 <br/>
-<b>:ok_hand: Verify your public assets are not blindly open</b>
+<b>:ok_hand: Verify your assets are not blindly open</b>
 <br/>
 <hr/>
 </p>
