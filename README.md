@@ -1,3 +1,19 @@
+<p align="center">
+<br/>
+<br/>
+<br/>
+   <img src="media/netz-logo.png" width="330"/>
+<br/>
+<br/>
+</p>
+<p align="center">
+<b>:bomb: Discover internet-wide misconfigurations</b>
+<br/>
+<b>:ok_hand: Verify your public assets are not blindly open</b>
+<br/>
+<hr/>
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 
